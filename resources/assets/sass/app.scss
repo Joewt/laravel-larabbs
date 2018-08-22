@@ -54,11 +54,16 @@ body {
         color: inherit;
       }
     }
-
-
-
   }
+}
 
 
+/* 用户注册页 */
 
+.register-page{
+  img.captcha{
+    margin-bottom: 0;
+    margin-top: 10px;
+    cursor: pointer;
+  }
 }
