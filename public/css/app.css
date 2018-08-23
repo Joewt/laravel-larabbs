@@ -8405,3 +8405,7 @@ body {
   cursor: pointer;
 }
 
+.user-show-page .user-info .thumbnail {
+  margin-bottom: 0px;
+}
+
