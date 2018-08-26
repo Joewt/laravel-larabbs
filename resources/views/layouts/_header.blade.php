@@ -8,7 +8,7 @@
             </button>
 
             <a href="{{ url('/') }}" class="navbar-brand">
-                Larabbs
+                HNIT-BBS
             </a>
         </div>
 

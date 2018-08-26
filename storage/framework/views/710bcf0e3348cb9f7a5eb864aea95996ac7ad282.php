@@ -8,7 +8,7 @@
             </button>
 
             <a href="<?php echo e(url('/')); ?>" class="navbar-brand">
-                Larabbs
+                HNIT-BBS
             </a>
         </div>
 

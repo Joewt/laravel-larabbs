@@ -6,9 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
-    <title><?php echo $__env->yieldContent('title','LaraBBS'); ?> - Laravel 进阶教程</title>
-    <meta name="description" content="<?php echo $__env->yieldContent('description', setting('seo_description', 'LaraBBS 爱好者社区。')); ?>" />
-    <meta name="keyword" content="<?php echo $__env->yieldContent('keyword', setting('seo_keyword', 'LaraBBS,社区,论坛,开发者论坛')); ?>" />
+    <title><?php echo $__env->yieldContent('title','BBS'); ?> - 湖工acm交流论坛</title>
+    <meta name="description" content="<?php echo $__env->yieldContent('description', setting('seo_description', 'Acm爱好者。')); ?>" />
+    <meta name="keyword" content="<?php echo $__env->yieldContent('keyword', setting('seo_keyword', '技术爱好者')); ?>" />
 
     <!-- Styles -->
     <link rel="stylesheet" href="<?php echo e(asset('css/app.css')); ?>">
