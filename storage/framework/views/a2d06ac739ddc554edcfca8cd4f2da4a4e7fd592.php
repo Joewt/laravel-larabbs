@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
     <title><?php echo $__env->yieldContent('title','LaraBBS'); ?> - Laravel 进阶教程</title>
-    <meta name="description" content="<?php echo $__env->yieldContent('description', 'LaraBBS 爱好者社区'); ?>" />
+    <meta name="description" content="<?php echo $__env->yieldContent('description', setting('seo_description', 'LaraBBS 爱好者社区。')); ?>" />
+    <meta name="keyword" content="<?php echo $__env->yieldContent('keyword', setting('seo_keyword', 'LaraBBS,社区,论坛,开发者论坛')); ?>" />
 
     <!-- Styles -->
     <link rel="stylesheet" href="<?php echo e(asset('css/app.css')); ?>">
