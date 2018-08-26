@@ -21,7 +21,7 @@ return array(
      *
      * @type string
      */
-    'title' => env('APP_NAME','HNIT-BBS'),
+    'title' => env('APP_NAME','BBS'),
 
     /*
      * The path to your model config directory
