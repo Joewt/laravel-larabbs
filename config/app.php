@@ -179,7 +179,7 @@ return [
         Frozennode\Administrator\AdministratorServiceProvider::class,
         //swoole的加速
         //SwooleTW\Http\LaravelServiceProvider::class,
-        //Hhxsv5\LaravelS\Illuminate\LaravelSServiceProvider::class,
+        Hhxsv5\LaravelS\Illuminate\LaravelSServiceProvider::class,
 
     ],
 

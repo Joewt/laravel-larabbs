@@ -4,7 +4,8 @@
  * @see https://github.com/hhxsv5/laravel-s/blob/master/Settings.md  English
  */
 return [
-    'listen_ip'          => env('LARAVELS_LISTEN_IP', '127.0.0.1'),
+    //这里的ip地址注意要改为外网ip地址
+    'listen_ip'          => env('LARAVELS_LISTEN_IP', '192.168.10.10'),
     'listen_port'        => env('LARAVELS_LISTEN_PORT', 5200),
     'socket_type'        => env('LARAVELS_SOCKET_TYPE', defined('SWOOLE_SOCK_TCP') ? \SWOOLE_SOCK_TCP : 1),
     'enable_gzip'        => env('LARAVELS_ENABLE_GZIP', false),
