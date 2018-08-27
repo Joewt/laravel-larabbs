@@ -177,6 +177,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Frozennode\Administrator\AdministratorServiceProvider::class,
+        //swoole的加速
+        //SwooleTW\Http\LaravelServiceProvider::class,
+        //Hhxsv5\LaravelS\Illuminate\LaravelSServiceProvider::class,
 
     ],
 
