@@ -21,10 +21,20 @@
                 <li class="<?php echo e(active_class((if_route('categories.show') && if_route_param('category',4)))); ?>"><a href="<?php echo e(route('categories.show', 4)); ?>">公告</a></li>
             </ul>
 
+
+
             <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form action="<?php echo e(route('search')); ?>" method="get" style="margin-top:10px;">
+                        <div class="ui icon input">
+                            <input type="text" class="prompt" name="q" style="border-radius: 500rem;">
+                        </div>
+                    </form>
+                </li>
+
                 <?php if(auth()->guard()->guest()): ?>
-                    <li><a href="<?php echo e(route('login')); ?>">login</a></li>
-                    <li><a href="<?php echo e(route('register')); ?>">register</a></li>
+                    <li><a href="<?php echo e(route('login')); ?>">登录</a></li>
+                    <li><a href="<?php echo e(route('register')); ?>">注册</a></li>
                 <?php else: ?>
                     <li>
                         <a href="<?php echo e(route('topics.create')); ?>">

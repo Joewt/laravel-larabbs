@@ -21,10 +21,20 @@
                 <li class="{{ active_class((if_route('categories.show') && if_route_param('category',4))) }}"><a href="{{ route('categories.show', 4) }}">公告</a></li>
             </ul>
 
+
+
             <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form action="{{ route('search') }}" method="get" style="margin-top:10px;">
+                        <div class="ui icon input">
+                            <input type="text" class="prompt" name="q" style="border-radius: 500rem;">
+                        </div>
+                    </form>
+                </li>
+
                 @guest
-                    <li><a href="{{ route('login') }}">login</a></li>
-                    <li><a href="{{ route('register') }}">register</a></li>
+                    <li><a href="{{ route('login') }}">登录</a></li>
+                    <li><a href="{{ route('register') }}">注册</a></li>
                 @else
                     <li>
                         <a href="{{ route('topics.create') }}">
