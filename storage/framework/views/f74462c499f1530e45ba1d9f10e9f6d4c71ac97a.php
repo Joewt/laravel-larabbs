@@ -59,6 +59,7 @@
 
 <?php $__env->startSection('styles'); ?>
     <link rel="stylesheet" type="text/css" href="<?php echo e(asset('css/simditor.css')); ?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('css/simditor-emoji.css')); ?>">
 <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('scripts'); ?>
@@ -66,11 +67,34 @@
     <script type="text/javascript"  src="<?php echo e(asset('js/hotkeys.js')); ?>"></script>
     <script type="text/javascript"  src="<?php echo e(asset('js/uploader.js')); ?>"></script>
     <script type="text/javascript"  src="<?php echo e(asset('js/simditor.js')); ?>"></script>
+    <script type="text/javascript"  src="<?php echo e(asset('js/simditor-emoji.js')); ?>"></script>
+
+
 
     <script>
         $(document).ready(function(){
             var editor = new Simditor({
                 textarea: $('#editor'),
+                tabIndent: true,
+                toolbar: [
+                    'title',
+                    'bold',
+                    'italic',
+                    'underline',
+                    'strikethrough',
+                    'fontScale',
+                    'color',
+                    'ol',
+                    'ul',
+                    'blockquote',
+                    'code',
+                    'table',
+                    'link',
+                    'image',
+                    'hr',
+                    'indent',
+                    'outdent',
+                    'alignment'],
                 upload: {
                     url: '<?php echo e(route('topics.upload_image')); ?>',
                     params: { _token: '<?php echo e(csrf_token()); ?>' },
@@ -79,6 +103,9 @@
                     leaveConfirm: '文件上传中，关闭此页面将取消上传。'
                 },
                 pasteImage: true,
+                emoji: {
+                    imagePath: 'images/emoji/'
+                }
             });
         });
     </script>
