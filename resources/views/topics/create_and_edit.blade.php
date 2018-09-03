@@ -105,9 +105,6 @@
                     leaveConfirm: '文件上传中，关闭此页面将取消上传。'
                 },
                 pasteImage: true,
-                emoji: {
-                    imagePath: 'images/emoji/'
-                }
             });
         });
     </script>
