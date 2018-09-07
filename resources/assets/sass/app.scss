@@ -119,7 +119,8 @@ body {
   }
 
   .reply-content{
-    margin: 6px 0;
+    margin: 6px 0 0 57px;
+    display: block;
   }
 
 }
@@ -223,4 +224,10 @@ body {
   }
 }
 
+
+.infos .meta.operation {
+  font-size: 13px;
+  margin-top: 10px;
+  display: block;
+}
 

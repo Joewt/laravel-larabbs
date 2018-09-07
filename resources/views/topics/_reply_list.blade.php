@@ -28,8 +28,14 @@
                     </span>
                     @endcan
                 </div>
-                <div class="reply-content">
-                    {!! $reply->content !!}
+                <div class="reply-content" style="margin-left:57px;">
+                    <p>
+                        {!! $reply->content !!}
+                    </p>
+                    sdfsss
+                    <span class="meta operation" style="margin-top:5px;">
+                    <a href=""><i class="fa fa-reply"></i></a>
+                </span>
                 </div>
             </div>
         </div>

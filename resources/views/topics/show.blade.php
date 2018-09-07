@@ -65,8 +65,11 @@
             {{-- 回复列表 --}}
             <div class="panel panel-default topic-reply">
                 <div class="panel-body">
-                    @includeWhen(Auth::check(),'topics._reply_box',['topic'=>$topic])
                     @include('topics._reply_list', ['replies' => $topic->replies()->with('user')->get()])
+                    <div class="alert alert-info" role="alert">
+                        请友善回答问题 : )
+                    </div>
+                    @includeWhen(Auth::check(),'topics._reply_box',['topic'=>$topic])
                 </div>
             </div>
 
